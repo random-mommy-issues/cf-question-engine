@@ -2,11 +2,11 @@ class UserProfile {
     constructor(userData) {
         this.handle = userData.handle;
         this.rating = userData.rating;
-
+        this.maxRating = userData.maxRating;
         this.tag_data = {};
         this.avg_rating = 0;
         this.recent_activity = [];
-        this.solvedCount = 0 ; 
+        this.solvedCount = 0;
     }
 
     calculate(submissions) {
@@ -59,3 +59,4 @@ class UserProfile {
 }
 
 }
+export {UserProfile} ; 
